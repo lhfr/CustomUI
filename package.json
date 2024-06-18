@@ -1,0 +1,42 @@
+{
+  "name": "custom-ui",
+  "version": "0.0.1",
+  "description": "A static site based on dumi",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "prepare": "husky install && dumi setup",
+    "deploy": "gh-pages -d dist"
+  },
+  "authors": [],
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "dumi": "^2.2.0",
+    "gh-pages": "^6.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "antd": "^5.8.6",
+    "father": "^4.3.1",
+    "iconfont": "^0.4.1",
+    "mockjs": "^1.1.0",
+    "react-sortablejs": "^6.1.4",
+    "seedsui-react": "^5.7.55"
+  }
+}
