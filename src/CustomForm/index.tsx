@@ -90,7 +90,7 @@ const PackComponet = ({ field, form, onChange, children, ...restProps }) => {
       // 关联显示弹窗
       if (
         hasValue(form.getFieldValue(key)) &&
-        field.cascader[key].hasOwnProperty('valueToClearValue')
+        field.cascader[key]['valueToClearValue']
       ) {
         Modal.confirm({
           title: field.cascader[key]?.valueToClearValue,
