@@ -1,1 +1,0 @@
-import{c as a,a as t,F as r,r as _,o as l}from"./index-DMaEfBnb.js";const m=(n,o)=>{const e=n.__vccOpts||n;for(const[c,s]of o)e[c]=s;return e},f={};function p(n,o){const e=_("svg-icon");return l(),a(r,null,[t(e,{name:"theme-dark",class:"w-2 h-2"}),t(e,{name:"theme-light",class:"w-2 h-2"})],64)}const i=m(f,[["render",p]]);export{i as default};
